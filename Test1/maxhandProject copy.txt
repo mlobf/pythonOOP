@@ -1,0 +1,105 @@
+The deck of cards here for the sake of this problem is going to be 52 cards.
+
+Now, these are the rules of the game.
+You have a bunch of players in this case, we have three players, we have Adam, we have Alice and
+we have Bob.
+
+Each player is going to draw two cards from the pile from the deck of cards.
+
+So Adam gets two clubs, six diamonds.
+
+Alice draws her to course, she gets eight hearts and then Jack Spades.
+
+And then finally, Bob draws two cards.
+He gets the ace of spades and five of hearts.
+OK, so simply each player will draw two cards from the pile.
+
+Now, this is a simulation of around.
+The winner of the round is going to be the player who has the strongest card in his hand.
+
+So after each of the players draws two cards, each player will reveal their hand to the rest of the
+players so that all the players can see all the cards.
+
+And then the player with the strongest cards wins the round, wins this round.
+
+How do we define the strongest card?
+
+Here are the rules.
+
+If you have two cards with different rank and this is the number that appears on the card.
+
+So let's say, for example, we're comparing six diamonds with four clubs.
+
+If we want to figure out which one is the stronger card, then the six Dimond's is the stronger card
+because six is a larger number than four.
+
+And since we have two cards with different numbers, the card with the higher number is the card that
+is stronger.
+
+The tricky part is if you have two cards that have the same number or the same rank on them, this is
+when things get a little bit trickier.
+
+If you have two cards with the same number on them, then instead of comparing numbers, you start comparing
+suits,
+	-spades is stronger than hearts,
+	-hearts is stronger than diamonds, 
+	-diamonds is stronger than clubs.
+	-clubs is the weak suit. 
+
+So let's say you have three of hearts and three of clubs.
+Which one is stronger?
+It's going to be three of hearts because Hearts is a stronger suit than clubs.
+
+What if you have ace of spades and the ace of hearts, for example?
+In this case, the ace of spades is stronger than the house of Cards because spades is stronger than
+hearts.
+
+And one thing I want to mention here, since we're talking about the ace, the rank of a card is going
+to be the number on the card.
+
+But then you have cards with pictures like the Jack the Queen, the the King and the ace.
+
+These are all stronger than any other number.
+
+So the way it works is if you want to list the ranks from highest to lowest, then Ace will be the strongest
+rank.
+
+And then King Queen Jack.
+And then the numbers, ten, nine, all the way down to two.
+So this is how ranks work.
+So if you have an ace of hearts, for example, and the number ten, then the ace of hearts is the winner
+because Ace is a stronger rank than the number ten.
+OK, so to summarize, it's very easy if you have two cards.
+These two cards have different strengths.
+The card with the stronger rank is overall stronger.
+If you have two cards with the same rank, then the stronger card is the card with the stronger suit
+and the stronger suit basically is defined by the rules I just mentioned.
+Spades is stronger than hearts.
+Hearts are stronger than diamonds, and then diamonds is stronger than clubs.
+So let's look back at the screen and look at this round here and see who wins this round.
+So if we look at all the cards on the screen, it's very obvious that the strongest card on the screen
+is the ace of spades that Bob has.
+And this is why Bob is going to win this round.
+So after this first round, Bob's score is going to be one.
+Alice and Adam are going to be zero.
+Let's play another round.
+So Adam draws two cars, he gets four of clubs, and then the king of hearts, Alice gets the nine of
+hearts and the two of spades, Bob gets the king of clubs and the king of diamonds.
+Now we look at all the cards again and see which player has the strongest card.
+Of course, if you only look at the ranks, the highest rank in this round is the king.
+But we have three kings, Bob has two kings, and then Adam has one king.
+So since we have three cars of the same rank, we are going to compare suits so hearts, clubs and diamonds,
+the strongest suit here is hearts.
+So this round goes to Adam and that's why Adam gets a point.
+So the total score after two rounds is Bob one, Alice zero and Adam one.
+So this is how you play this game.
+You keep playing these rounds until you can't play any more rounds.
+And that will happen when you don't have enough cards in the pile to support another round.
+So if you have less than six cards in the pile, then you can't really play another round.
+So that's when the game ends.
+And the player with the highest score is the winner of the whole game.
+So now I guess you're pretty much ready to start working on the project now that you understand how
+this game is played, what the rules of the game are and how to determine the strongest cards in around,
+OK.
+I hope that was clear.
+And I'll see you in the next video.
