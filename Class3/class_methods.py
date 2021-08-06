@@ -26,6 +26,4 @@ print(f'id of Apple instance a : {id(Apple)}')
 
 Apple._set_calories(100)
 
-print(
-    a.volume(10)
-)
+print(a.volume(10))
