@@ -42,6 +42,6 @@ class Employee:
 
 '''
     name mangling
-        Python changes the name when it has __ 
+        Python changes the name when it has
 
 '''

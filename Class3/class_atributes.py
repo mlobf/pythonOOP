@@ -7,6 +7,9 @@ class Apple:
         self.weight = weight
 
     def get_calories(self):
+        '''
+            | Return the calories according weight
+        '''
         return self.weight/100 * self.calories_per_100_gram
 
 
@@ -24,6 +27,4 @@ Apple.food_type = 'banana'
 # print(e2.food_type, 'e2')
 # print(Apple.food_type, 'Class apple')
 
-print(
-    e1.get_calories()
-)
+print(e1.get_calories())
