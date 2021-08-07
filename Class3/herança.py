@@ -16,14 +16,12 @@ class Person:
 
 class Employee(Person):
     def __init__(self, first, last, employee_id, salary):
-        self.first_name = first
-        self.last_name = last
+        super().__init__(first, last)
         self.employee_id = employee_id
         self.salary = salary
 
     def info(self):
-        print(f"firstname: {self.first_name}")
-        print(f"lastname: {self.last_name}")
+        super().info()
         print(f"employee: {self.employee_id}")
         print(f"salary: {self.salary}")
 
