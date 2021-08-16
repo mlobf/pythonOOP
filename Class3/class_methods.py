@@ -1,4 +1,9 @@
 class Apple:
+    """
+        Python has no function Overloading
+        Use Python 'Method Overwriting insead'
+        
+    """
     food_type = 'fruit'
     calories = 50
 

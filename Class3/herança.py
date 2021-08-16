@@ -16,6 +16,9 @@ class Person:
 
 class Employee(Person):
     def __init__(self, first, last, employee_id, salary):
+        # mesmo usando o super eu tenho que declarar os atributos como parametros
+        #   da classe pai dentro no metodo init
+
         super().__init__(first, last)
         self.employee_id = employee_id
         self.salary = salary
@@ -25,9 +28,38 @@ class Employee(Person):
         print(f"employee: {self.employee_id}")
         print(f"salary: {self.salary}")
 
+    def get_raise(self):
+        self.salary += 1.005 * self.salary
+
+
+class LowPerformanceEmployee(Employee):
+    def get_raise(self):
+        self.salary += 1.001 * self.salary
+
+    def info(self):
+        super().info()
+        print('Low performance employee !!')
+
 
 person = Person('Tom', 'Brady')
-employee = Employee('marcos', 'leme', 12, 20000)
+employee = Employee('marcos', 'leme', 12, 1000)
+low_employee = LowPerformanceEmployee('Joao', 'Filho', 12, 1000)
 
-person.info()
-employee.info()
+
+print('----------------------------------')
+
+low_employee.info()
+low_employee.get_raise()
+low_employee.get_raise()
+low_employee.get_raise()
+low_employee.get_raise()
+low_employee.info()
+
+print('----------------------------------')
+
+
+print(dir(low_employee))
+
+
+for m in dir(low_employee):
+    print(m)
