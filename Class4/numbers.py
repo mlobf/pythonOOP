@@ -10,6 +10,9 @@ class ComplexNumber:
         self.imag = imag
 
     def prettyprint(self):
+        """
+            Just a print method
+        """
         if self.imag == 0:
             print(self.real)
         elif self.imag > 0:
@@ -18,11 +21,17 @@ class ComplexNumber:
             print(f"({self.real}-{-self.imag}i)")
 
     def add(self, other: int = 0.0):
+        """
+            To add imaginary number to other
+        """
         r = self.real + other.real
         i = self.imag + other.imag
         return ComplexNumber(r, i)
 
     def less(self, other: int = 0.0):
+        """
+            To less imaginary number to other
+        """
         r = self.real - other.real
         i = self.imag - other.imag
         return ComplexNumber(r, i)
