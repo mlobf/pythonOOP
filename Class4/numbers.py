@@ -1,8 +1,8 @@
 class ComplexNumber:
     """
-        this is an abstration.
-        How to models a oop in python to
-        create a complex number
+    this is an abstration.
+    How to models a oop in python to
+    create a complex number
     """
 
     def __init__(self, real: int = 0.0, imag: int = 0.0):
@@ -13,16 +13,16 @@ class ComplexNumber:
         if self.imag == 0:
             print(self.real)
         elif self.imag > 0:
-            print(f'({self.real}+{self.imag}i)')
+            print(f"({self.real}+{self.imag}i)")
         else:
-            print(f'({self.real}-{-self.imag}i)')
+            print(f"({self.real}-{-self.imag}i)")
 
-    def add(self, other):
+    def add(self, other: int = 0.0):
         r = self.real + other.real
         i = self.imag + other.imag
         return ComplexNumber(r, i)
 
-    def less(self, other):
+    def less(self, other: int = 0.0):
         r = self.real - other.real
         i = self.imag - other.imag
         return ComplexNumber(r, i)

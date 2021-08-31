@@ -14,8 +14,7 @@ class PlayingCard:
         self.suit = suit
 
 
-class Player():
-
+class Player:
     def __init__(self, name):
         self.name = name
         self.hand = []
@@ -25,7 +24,7 @@ class Deck:
     def __init__(self):
         self.cards = []
         for i in range(13):
-            self.cards.append(PlayingCard(i+2, Suit.SPADES))
-            self.cards.append(PlayingCard(i+2, Suit.DIAMONDS))
-            self.cards.append(PlayingCard(i+2, Suit.HEARTS))
-            self.cards.append(PlayingCard(i+2, Suit.CLUBS))
+            self.cards.append(PlayingCard(i + 2, Suit.SPADES))
+            self.cards.append(PlayingCard(i + 2, Suit.DIAMONDS))
+            self.cards.append(PlayingCard(i + 2, Suit.HEARTS))
+            self.cards.append(PlayingCard(i + 2, Suit.CLUBS))

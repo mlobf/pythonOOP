@@ -38,15 +38,15 @@ class LowPerformanceEmployee(Employee):
 
     def info(self):
         super().info()
-        print('Low performance employee !!')
+        print("Low performance employee !!")
 
 
-person = Person('Tom', 'Brady')
-employee = Employee('marcos', 'leme', 12, 1000)
-low_employee = LowPerformanceEmployee('Joao', 'Filho', 12, 1000)
+person = Person("Tom", "Brady")
+employee = Employee("marcos", "leme", 12, 1000)
+low_employee = LowPerformanceEmployee("Joao", "Filho", 12, 1000)
 
 
-print('----------------------------------')
+print("----------------------------------")
 
 low_employee.info()
 low_employee.get_raise()
@@ -55,7 +55,7 @@ low_employee.get_raise()
 low_employee.get_raise()
 low_employee.info()
 
-print('----------------------------------')
+print("----------------------------------")
 
 
 print(dir(low_employee))

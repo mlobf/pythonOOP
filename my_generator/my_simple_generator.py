@@ -12,10 +12,10 @@ import sys
 
 def gen(n):
     for i in range(n):
-        yield i**3
+        yield i ** 3
 
 
-x = [i**2 for i in range(10000)]
+x = [i ** 2 for i in range(10000)]
 g = gen(100000)
 
 
@@ -23,7 +23,7 @@ print(sys.getsizeof(x))
 print(sys.getsizeof(g))
 
 
-'''
+"""
 for i in g:
     print(i)
-'''
+"""
