@@ -20,7 +20,7 @@ class ComplexNumber:
         else:
             print(f"({self.real}-{-self.imag}i)")
 
-    def add(self, other: int = 0.0):
+    def __add__(self, other: int = 0.0):
         """
             To add imaginary number to other
         """
@@ -28,20 +28,9 @@ class ComplexNumber:
         i = self.imag + other.imag
         return ComplexNumber(r, i)
 
-    def less(self, other: int = 0.0):
-        """
-            To less imaginary number to other
-        """
-        r = self.real - other.real
-        i = self.imag - other.imag
-        return ComplexNumber(r, i)
 
+cn1 = ComplexNumber(5, 3)
+cn2 = ComplexNumber(2, 1)
 
-cn1 = ComplexNumber(5, 1)
-cn2 = ComplexNumber(2, 3)
-
-cn3 = cn1.add(cn2)
-cn3.prettyprint()
-
-cn3 = cn1.less(cn2)
+cn3 = cn1 + cn2
 cn3.prettyprint()
