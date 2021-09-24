@@ -46,20 +46,26 @@ employee = Employee("marcos", "leme", 12, 1000)
 low_employee = LowPerformanceEmployee("Joao", "Filho", 12, 1000)
 
 
-print("----------------------------------")
-
+'''
 low_employee.info()
 low_employee.get_raise()
 low_employee.get_raise()
 low_employee.get_raise()
 low_employee.get_raise()
 low_employee.info()
+'''
+print("----------------------------------")
+
+print('Employee')
+employee.info()
 
 print("----------------------------------")
 
+print("Person")
+person.info()
 
-print(dir(low_employee))
+# print(dir(low_employee))
 
 
-for m in dir(low_employee):
-    print(m)
+# for m in dir(low_employee):
+#    print(m)

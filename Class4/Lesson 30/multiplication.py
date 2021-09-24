@@ -44,6 +44,8 @@ class ComplexNumber:
         i = self.real * other.imag + self.imag*other.real
         return ComplexNumber(r, i)
 
+# -------------------------------------------------------
+
 
 cn1 = ComplexNumber(5, 3)
 cn2 = ComplexNumber(2, 6)
