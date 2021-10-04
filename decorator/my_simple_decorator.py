@@ -11,7 +11,7 @@ def timer(func):
 
     return wrapper
 
-
+# how to implement a simple decorator
 @timer
 def test():
     for _ in range(100000):
