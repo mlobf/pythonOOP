@@ -11,7 +11,7 @@ class ComplexNumber:
 
     def prettyprint(self):
         """
-            Just a print method
+        Just a print method
         """
         if self.imag == 0:
             print(self.real)
@@ -22,7 +22,7 @@ class ComplexNumber:
 
     def __add__(self, other: int = 0.0):
         """
-            To add imaginary number to other
+        To add imaginary number to other
         """
         r = self.real + other.real
         i = self.imag + other.imag
@@ -30,7 +30,7 @@ class ComplexNumber:
 
     def __sub__(self, other: int = 0.0):
         """
-            To add imaginary number to other
+        To add imaginary number to other
         """
         r = self.real - other.real
         i = self.imag - other.imag

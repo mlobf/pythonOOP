@@ -16,10 +16,9 @@ y = -2
 # Functional aproach
 
 
-def comparison(x: int = 0, y: int = 0):
+def comparison(x: int = 0, y: int = 0) -> bool:
     result = int(x) == int(y)
-    # return result
-    return print(result)
+    return print(type(result))
 
 
 comparison(x, y)

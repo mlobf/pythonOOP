@@ -4,6 +4,16 @@
 #   que não devem fazer parte da class mãe.
 
 
+class Date:
+    def __init__(self, days, months):
+        self.days = days
+        self.months = months
+
+    def info(self):
+        print(f"days: {self.days}")
+        print(f"months: {self.months}")
+
+
 class Person:
     def __init__(self, first, last):
         self.first_name = first
@@ -14,7 +24,7 @@ class Person:
         print(f"lastname: {self.last_name}")
 
 
-class Employee(Person):
+class Employee(Person, Date):
     def __init__(self, first, last, employee_id, salary):
         # mesmo usando o super eu tenho que declarar os atributos como
         # parametros da classe pai dentro no metodo init
@@ -46,17 +56,17 @@ employee = Employee("marcos", "leme", 12, 1000)
 low_employee = LowPerformanceEmployee("Joao", "Filho", 12, 1000)
 
 
-'''
+"""
 low_employee.info()
 low_employee.get_raise()
 low_employee.get_raise()
 low_employee.get_raise()
 low_employee.get_raise()
 low_employee.info()
-'''
+"""
 print("----------------------------------")
 
-print('Employee')
+print("Employee")
 employee.info()
 
 print("----------------------------------")

@@ -57,9 +57,7 @@ low_employee.info()
 
 print("----------------------------------")
 
+# print(dir(low_employee))
 
-print(dir(low_employee))
 
-
-for m in dir(low_employee):
-    print(m)
+print("Low employee first name", low_employee.first_name)

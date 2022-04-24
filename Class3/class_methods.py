@@ -22,7 +22,7 @@ class Apple:
 
     @staticmethod
     def volume(r):
-        return 4 / 3 * 3.14 * (r ** 3)
+        return 4 / 3 * 3.14 * (r**3)
 
 
 a = Apple("red", 100)
@@ -30,6 +30,8 @@ print(f"id of Apple class : {id(Apple)}")
 print(f"id of Apple instance a : {id(Apple)}")
 
 
-Apple._set_calories(100)
+# Apple._set_calories(100)
+
+print("a calories", a.calories)
 
 print(a.volume(10))
