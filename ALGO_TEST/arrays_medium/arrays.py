@@ -1,5 +1,3 @@
-import pdb
-
 """  
     Calcular o volume de agua dentro do maior conteiner possivel.
 
@@ -12,13 +10,25 @@ import pdb
         The best solution of all soluctions.
 """
 
-
 # Brute Force Method
-
 # resposta e 28.
-
 heights = [7, 1, 2, 3, 9]
 
 
-def get_max_container(heights):
+def get_max_water_container(heights):
     max_area = 0
+    p1 = 0
+    heights_len = len(heights)
+    while p1 != heights_len:
+        p2 = p1 + 1
+        while p2 != heights_len:
+            height = min(heights[p1], heights[p2])
+            width = p2 - p1
+            area = height * width
+            max_area = max(max_area, area)
+            p2 += 1
+        p1 += 1
+    return max_area
+
+
+print(get_max_water_container(heights))
